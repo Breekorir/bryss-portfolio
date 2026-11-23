@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100d0b">
+  <title>BRYSS | Artist Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <header class="admin-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">B<span>.</span></span>
+      <span class="brand-name">BRYSS<br><small>ARTIST DASHBOARD</small></span>
+    </a>
+    <a href="index.html" class="text-link">View public website ↗</a>
+  </header>
+
+  <main class="admin-wrap">
+    <!-- Login Panel -->
+    <section id="login-panel" class="admin-panel login-panel">
+      <p class="eyebrow">PRIVATE ARTIST AREA</p>
+      <h1>WELCOME <em>BACK.</em></h1>
+      <p class="admin-muted">Sign in to manage the artwork and projects displayed on your BRYSS portfolio.</p>
+      
+      <form id="login-form">
+        <label for="login-email">EMAIL ADDRESS</label>
+        <input id="login-email" type="email" required autocomplete="username" placeholder="artist@bryss.studio">
+        <label for="login-password">PASSWORD</label>
+        <input id="login-password" type="password" required autocomplete="current-password" placeholder="••••••••">
+        <button class="button button-light" type="submit" id="login-button">Sign in <span>↗</span></button>
+      </form>
+      
+      <p id="login-message" class="admin-message" role="status"></p>
+
+      <div id="demo-mode-container" style="margin-top:20px;border-top:1px solid var(--line);padding-top:16px;">
+        <p class="admin-hint">
+          <strong>Testing without Supabase yet?</strong> You can explore and test the dashboard in Local Demo Mode:
+        </p>
+        <button type="button" class="demo-switch-btn" id="start-demo-btn">
+          ⚡ Open Dashboard in Local Demo Mode
+        </button>
+      </div>
+
+      <p class="admin-hint" style="margin-top:18px;">
+        <strong>Production Setup:</strong> Connect your Supabase project in <code>supabase-config.js</code>, run <code>supabase-setup.sql</code> in your Supabase SQL Editor, and create your artist user in Supabase Authentication.
+      </p>
+    </section>
+
+    <!-- Dashboard Panel -->
+    <section id="dashboard-panel" hidden>
+      <div class="dashboard-heading">
+        <div>
+          <span id="backend-status-badge" class="mode-badge mode-badge-live">CONNECTED TO SUPABASE</span>
+          <p class="eyebrow">BRYSS / CONTENT MANAGEMENT</p>
+          <h1>YOUR <em>WORK.</em></h1>
+          <p class="admin-muted">Add a project here and publish it directly to the public portfolio gallery.</p>
+        </div>
+        <button id="logout-button" class="outline-button">Sign out</button>
+      </div>
+
+      <div class="admin-columns">
+        <!-- Editor Form Panel -->
+        <section class="admin-panel">
+          <h2 id="editor-heading">ADD NEW ARTWORK</h2>
+          <form id="artwork-form">
+            <input type="hidden" id="artwork-id">
+            
+            <label for="art-title">ARTWORK TITLE *</label>
+            <input id="art-title" required maxlength="100" placeholder="e.g. CHUNGAA or Character in Denim">
+
+            <label for="art-category">CATEGORY *</label>
+            <select id="art-category" required>
+              <option value="murals">Murals</option>
+              <option value="sculpture">Sculpture & wearable art</option>
+              <option value="photography">Photography</option>
+              <option value="film">Videography & film</option>
+            </select>
+
+            <label for="art-description">DESCRIPTION</label>
+            <textarea id="art-description" rows="4" maxlength="1000" placeholder="Tell visitors about this project, technique, meaning or client story..."></textarea>
+
+            <label for="art-image">ARTWORK IMAGE *</label>
+            <input id="art-image" type="file" accept="image/*">
+            <div id="image-preview-wrap" class="image-preview-container">
+              <img id="image-preview-thumb" class="image-preview-thumb" src="" alt="Selected image preview">
+            </div>
+            <p class="admin-hint">JPG, PNG or WebP under 10 MB.</p>
+
+            <label for="art-video">VIDEO LINK (OPTIONAL)</label>
+            <input id="art-video" type="url" placeholder="https://youtube.com/watch?v=...">
+
+            <label class="check-label">
+              <input id="art-published" type="checkbox" checked> Publish on the public website immediately
+            </label>
+
+            <div class="admin-actions">
+              <button class="button button-light" type="submit" id="save-artwork">Save artwork <span>↗</span></button>
+              <button class="outline-button" type="button" id="cancel-edit" hidden>Cancel edit</button>
+            </div>
+            <p id="form-message" class="admin-message" role="status"></p>
+          </form>
+        </section>
+
+        <!-- Artworks List Panel -->
+        <section class="admin-panel">
+          <div class="list-heading">
+            <h2>YOUR ARTWORK</h2>
+            <button id="refresh-button" class="outline-button">Refresh</button>
+          </div>
+          <div id="artwork-list" class="artwork-list">
+            <p class="admin-muted">Loading artworks...</p>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "bryss-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website and dashboard for multidisciplinary artist Bryss",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["portfolio", "artist", "bryss", "gallery"],
+  "author": "Bryss",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

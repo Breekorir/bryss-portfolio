@@ -1,0 +1,162 @@
+[
+  {
+    "id": "art-1",
+    "title": "The Commander",
+    "category": "murals",
+    "description": "Expressive mixed-media portrait featuring newspaper collage, burnt distressing, military insignia, and bold painted contours.",
+    "image_url": "assets/portrait-general-mixed-media.jpg",
+    "video_url": null,
+    "published": true,
+    "created_at": "2026-11-23T19:30:00.000Z"
+  },
+  {
+    "id": "art-2",
+    "title": "The Shepherd (Lion & Lamb)",
+    "category": "murals",
+    "description": "Allegorical canvas painting depicting a protective lion shielding a young lamb against a surrounding pack of wolves.",
+    "image_url": "assets/the-shepherd-lion-lamb.jpg",
+    "video_url": null,
+    "published": true,
+    "created_at": "2026-11-23T19:29:00.000Z"
+  },
+  {
+    "id": "art-3",
+    "title": "Character in Denim — One Piece",
+    "category": "sculpture",
+    "description": "Hand-crafted custom painted denim artwork featuring iconic One Piece anime characters (Luffy, Zoro, Brook).",
+    "image_url": "assets/one-piece-denim-art.jpeg",
+    "video_url": null,
+    "published": true,
+    "created_at": "2026-11-23T19:28:00.000Z"
+  },
+  {
+    "id": "art-4",
+    "title": "Nairobidanie / Boondocks Denim",
+    "category": "sculpture",
+    "description": "Original hand-painted custom denim jeans featuring Boondocks character Riley Freeman and Nairobi street graffiti typography.",
+    "image_url": "assets/boondocks-custom-denim.jpg",
+    "video_url": null,
+    "published": true,
+    "created_at": "2026-11-23T19:27:00.000Z"
+  },
+  {
+    "id": "art-5",
+    "title": "Extraterrestrial Anatomy Set",
+    "category": "sculpture",
+    "description": "Hand-painted workwear 2-piece set: alien over globe graphic on work shirt, paired with anatomical skeleton ribcages and heart on trousers.",
+    "image_url": "assets/alien-skeleton-wearable-set.jpg",
+    "video_url": null,
+    "published": true,
+    "created_at": "2026-11-23T19:26:00.000Z"
+  },
+  {
+    "id": "art-6",
+    "title": "The Wanderer (Wood Relief Sculpture)",
+    "category": "sculpture",
+    "description": "Framed natural branch and twig assemblage relief sculpture depicting a nomad traveller with staff and knapsack.",
+    "image_url": "assets/the-wanderer-wood-sculpture.jpg",
+    "video_url": null,
+    "published": true,
+    "created_at": "2026-11-23T19:25:00.000Z"
+  },
+  {
+    "id": "art-7",
+    "title": "One Love — Bob Marley Tribute",
+    "category": "murals",
+    "description": "High-contrast graphic portrait of Bob Marley rendered in iconic Pan-African red, gold, and green radiant motifs.",
+    "image_url": "assets/bob-marley-rasta-portrait.jpg",
+    "video_url": null,
+    "published": true,
+    "created_at": "2026-11-23T19:24:00.000Z"
+  },
+  {
+    "id": "art-8",
+    "title": "Dance in Motion",
+    "category": "murals",
+    "description": "Fluid, rhythmic figurative painting capturing the kinetic energy and intimacy of two dancers, signed by Bryss.",
+    "image_url": "assets/dance-in-motion-airbrush.jpg",
+    "video_url": null,
+    "published": true,
+    "created_at": "2026-11-23T19:23:00.000Z"
+  },
+  {
+    "id": "art-9",
+    "title": "BBS Creamy & Tasty (Commercial Mural)",
+    "category": "murals",
+    "description": "Custom interior restaurant wall mural featuring bold pop graphics, dessert illustration, and expressive typography.",
+    "image_url": "assets/mural-cafe-creamy-tasty.jpg",
+    "video_url": null,
+    "published": true,
+    "created_at": "2026-11-23T19:22:00.000Z"
+  },
+  {
+    "id": "art-10",
+    "title": "Studio Practice — Behind the Canvas",
+    "category": "photography",
+    "description": "Bryss captured in the studio during the initial hand-drawn sketch and compositional phase of the Marley canvas.",
+    "image_url": "assets/bryss-in-studio-sketching.jpg",
+    "video_url": null,
+    "published": true,
+    "created_at": "2026-11-23T19:21:00.000Z"
+  },
+  {
+    "id": "art-12",
+    "title": "CHUNGAA — Music Video",
+    "category": "film",
+    "description": "Official music video direction, cinematography, and post-production editing for Mr Dope's 'Chungaa' - captured and directed by SHOTSBYBRYSS.",
+    "image_url": "assets/chungaa-video.png",
+    "video_url": "https://www.youtube.com/results?search_query=Mr+Dope+Chungaa+Bryss",
+    "published": true,
+    "created_at": "2026-11-23T19:19:00.000Z"
+  },
+  {
+    "id": "art-13",
+    "title": "COOGIE420 — SHINE (Official Video)",
+    "category": "film",
+    "description": "Music video creative direction and video editing ('BRYSS COOKED THIS') for artist COOGIE420.",
+    "image_url": "assets/video-coogie-shine.jpg",
+    "video_url": "https://www.youtube.com/results?search_query=COOGIE420+SHINE+Bryss",
+    "published": true,
+    "created_at": "2026-11-23T19:18:00.000Z"
+  },
+  {
+    "id": "art-14",
+    "title": "COOGIE420 — DOPAMINE (Official Video)",
+    "category": "film",
+    "description": "Cinematic visual effects, color grading, and video cutting for 'DOPAMINE' by COOGIE420.",
+    "image_url": "assets/video-coogie-dopamine.jpg",
+    "video_url": "https://www.youtube.com/results?search_query=COOGIE420+DOPAMINE+Bryss",
+    "published": true,
+    "created_at": "2026-11-23T19:17:00.000Z"
+  },
+  {
+    "id": "art-15",
+    "title": "COOGIE420 — PUSH (Official Video)",
+    "category": "film",
+    "description": "High-octane video editing and motion cuts ('BRYSS CHOPPED IT') for COOGIE420's release 'PUSH'.",
+    "image_url": "assets/video-coogie-push.jpg",
+    "video_url": "https://www.youtube.com/results?search_query=COOGIE420+PUSH+Bryss",
+    "published": true,
+    "created_at": "2026-11-23T19:16:00.000Z"
+  },
+  {
+    "id": "art-16",
+    "title": "COOGIE420 — FEELINGS (Official Video)",
+    "category": "film",
+    "description": "Urban night cinematography, moody street lighting, and video editing for 'FEELINGS'.",
+    "image_url": "assets/video-coogie-feelings.jpg",
+    "video_url": "https://www.youtube.com/results?search_query=FEELINGS+Coogie420+Bryss",
+    "published": true,
+    "created_at": "2026-11-23T19:15:00.000Z"
+  },
+  {
+    "id": "art-17",
+    "title": "Redox Ether — 5:00 AM (Official Video)",
+    "category": "film",
+    "description": "Music video styling, creative direction, and visuals ('WEAR_BRYSS IT') for Redox Ether's '5:00 AM'.",
+    "image_url": "assets/video-redox-5am.jpg",
+    "video_url": "https://www.youtube.com/results?search_query=Redox+Ether+500+AM+Bryss",
+    "published": true,
+    "created_at": "2026-11-23T19:14:00.000Z"
+  }
+]
